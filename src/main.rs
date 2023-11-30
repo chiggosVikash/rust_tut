@@ -1,23 +1,24 @@
-// use std::io;
+mod person_struct;
+use person_struct::Person;
+fn main(){
+   
+    let s = String::from("hello world");
 
-fn main() {
-    let mut num:i8 = 100;
+    let person = build_person(String::from("Vikash Kumar"), String::from("2004-01-02"));
 
-    println!("Signed interger of 8bit {}", num);
+    println!("{} is {} years old, born on {}", person.name, person.age, person.date_of_birth);
 
-    let tup = (12,2.5,"Vikash");
-    println!("Tuple is {:?}", tup);
 
-   let loop_result = loop{
-        println!("Value of num is {}", num);
-        if num == 0 {
-            break num;
-        }
-        num = num - 1;
-    };
-
-    println!("Loop result is {}", loop_result);
-
-    
+    let sentence = &s;
+    println!("{}",sentence);    
 
 }
+
+fn build_person(name: String, date_of_birth: String) -> Person{
+    return Person{
+        name,
+        age:19,
+        date_of_birth
+    }
+}
+
