@@ -1,15 +1,20 @@
-mod person_struct;
-mod resturent;
-mod tranit_exm;
-use std::{fs::{File, Permissions}, io::ErrorKind};
+// mod person_struct;
+// mod resturent;
+// mod tranit_exm;
+// use std::{fs::{File, Permissions}, io::ErrorKind};
+mod variables_tut;
 
-mod enums_example;
+// mod enums_example;
 
 fn main(){
-    let test = enums_example::BasicDetails::V4;
-    let sec_test = enums_example::BasicDetails::V6;
-    println!("current enum status is  {:?} {:?}",test,sec_test);
+    variables_tut::variables_fn();
 }
+
+// fn main(){
+//     let test = enums_example::BasicDetails::V4;
+//     let sec_test = enums_example::BasicDetails::V6;
+//     println!("current enum status is  {:?} {:?}",test,sec_test);
+// }
 
 // use crate::tranit_exm::{Tweet, Summary};
 // // use person_struct::Person;
