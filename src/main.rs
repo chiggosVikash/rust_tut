@@ -2,12 +2,12 @@
 // mod resturent;
 // mod tranit_exm;
 // use std::{fs::{File, Permissions}, io::ErrorKind};
-mod variables_tut;
+mod borrowing_tut;
 
 // mod enums_example;
 
 fn main(){
-    variables_tut::variables_fn();
+    borrowing_tut::borrowing();
 }
 
 // fn main(){
