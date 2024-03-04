@@ -3,11 +3,14 @@
 // mod tranit_exm;
 // use std::{fs::{File, Permissions}, io::ErrorKind};
 mod borrowing_tut;
+mod struct_tut;
 
 // mod enums_example;
 
 fn main(){
     borrowing_tut::borrowing();
+
+    struct_tut::struct_tut();
 }
 
 // fn main(){

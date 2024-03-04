@@ -6,3 +6,4 @@ pub fn borrowing(){
     println!("{}",name2);
 
 }
+
